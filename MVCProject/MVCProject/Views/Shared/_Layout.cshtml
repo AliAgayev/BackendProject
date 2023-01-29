@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVCProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVCProject.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/assets/main-site/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="~/assets/main-site/css/util.css">
+    <link rel="stylesheet" href="~/assets/main-site/css/main.css">
+</head>
+<body>
+
+    <div>
+        <partial name="_HomePage" />
+    </div>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/feather-icons/feather.min.js"></script>
+    <script src="~/lib/Chart.js/chart.min.js"></script>
+    <script src="~/template/dashboard.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
